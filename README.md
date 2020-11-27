@@ -1,5 +1,5 @@
 # Minecraft Bedrock Server
-Sets up a Minecraft Bedrock dedicated server on Ubuntu / Debian / Raspbian / Armbian with options for automatic updates, backups and running automatically at startup<br>
+Sets up a Minecraft Bedrock dedicated server on Ubuntu / Debian with options for automatic updates, backups and running automatically at startup<br>
 View installation instructions at: https://jamesachambers.com/minecraft-bedrock-edition-ubuntu-dedicated-server-guide/<br>
 <br>
 To run the installation type:<br>
@@ -8,18 +8,25 @@ chmod +x SetupMinecraft.sh<br>
 ./SetupMinecraft.sh<br>
 <br>
 <b>Tested Distributions</b><br>
--Ubuntu / Ubuntu Server 18.04.2<br>
+-Ubuntu / Ubuntu Server 20.04<br>
+-Ubuntu / Ubuntu Server 18.04<br>
 -Debian Stretch / Buster<br>
 <br>
 <b>Tested Platforms</b><br>
--PC X86_64<br>
--Udoo X86<br>
--Intel Compute Stick<br>
--ARM 64bit (warning: proof of concept, extremely slow)<br>
---Raspberry Pi<br>
---Tinkerboard<br>
+-PC X86_64 (WORKING)<br>
+-Udoo X86 (WORKING)<br>
+-Intel Compute Stick (WORKING)<br>
+-Other X86_64 platforms (WORKING)<br>
+-ARM 64bit (BROKEN -- needs linker and other binaries used for emulation to be updated)<br>
+--Raspberry Pi (BROKEN)<br>
+--Tinkerboard (BROKEN)<br>
 <br>
 <b>Update History</b><br>
+<br>
+November 17th 2020<br>
+-Fixed server autoupdating in start.sh<br>
+-Minecraft.net had made a change where the "--spider" parameter would return a 503 -- removed this to fix automatic updates<br>
+<br>
 <br>
 July 24th 2019<br>
 -Fixed Raspberry Pi support<br>
